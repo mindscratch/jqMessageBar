@@ -11,6 +11,7 @@
     margin:0px;
     padding:0px;
     border: none;
+	display: none;
 }
 .messagebar-top{
     top:0px;
