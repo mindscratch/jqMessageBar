@@ -1,7 +1,9 @@
 .messagebar{
     height:50px;
     width:100%;
-    background-color: #fff;
+    /*
+    background-color: rgba(0, 59, 98, 0.95);
+	*/
     position:fixed;
     filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95); 
     opacity: 0.95;
@@ -10,7 +12,7 @@
     z-index:9999999;
     margin:0px;
     padding:0px;
-    border: none;
+	border: none;
 	display: none;
 }
 .messagebar-top{
@@ -30,4 +32,20 @@
     font-size: 18px;
     font-family:'Lucida Grande',sans-serif;
 	color: #fff;
+}
+
+.messagebar-info {
+	background-color: #003B62 !important; /* have to use important b/c of the opacity used in the messagebar class, it takes precedence unless we use important */
+}
+
+.messagebar-error {
+	background-color: #ff1919 !important;
+}
+
+.messagebar-content-info {
+	font-weight: normal;
+}
+
+.messagebar-content-error {
+	font-weight: bold;
 }

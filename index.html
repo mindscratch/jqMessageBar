@@ -5,7 +5,9 @@
     <script src="lib/jqmessagebar.js" type="text/javascript"></script> 
     <script type="text/javascript">
 		$(function() {
-			$('body').messagebar();
+			$('body').messagebar({
+				random: 1234
+			});
 			
 			$('#show').click(function() {
 				$('body').messagebar("show");
@@ -13,6 +15,18 @@
 			
 			$('#hide').click(function() {
 				$('body').messagebar("hide");
+			});
+			
+			$('#submit-info').click(function(event) {
+				event.preventDefault();
+				$('body').messagebar('addMessage', $('#message').val(), 'info');
+				$('#info-message').val('');
+			});
+			
+			$('#submit-error').click(function(event) {
+				event.preventDefault();
+				$('body').messagebar('addMessage', $('#message').val(), 'error');
+				$('#error-message').val('');
 			});
 		});
 	</script>
@@ -22,16 +36,21 @@
 		<p>Some wonderful content goes here</p>
 		<p>Some wonderful content goes here</p>
 		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
-		<p>Some wonderful content goes here</p>
+		<br />
 		<p><a id="show" href="#">Show</a> the message bar</p>
 		<p><a id="hide" href="#">Hide</a> the message bar</p>
+		<form>
+			<label for="info-message">Message:</label><br />
+			<input id="info-message" type="text" placeholder="add an info message" />
+			<input type="submit" value="Add Info" id="submit-info" />
+		</form>
+		<form>
+			<label for="error-message">Message:</label><br />
+			<input id="error-message" type="text" placeholder="add an error message" />
+			<input type="submit" value="Add Error" id="submit-error" />
+		</form>
 	</div>
 
 </body>
 
-</html>
+</html> 
