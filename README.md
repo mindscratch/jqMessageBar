@@ -10,3 +10,8 @@ Dependencies
 ============
 
 * jQuery 1.6
+
+Demo
+====
+
+To try it clone or download the project and open up index.html
