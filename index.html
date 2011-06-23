@@ -6,10 +6,14 @@
     <script type="text/javascript">
 		$(function() {
 			$('body').messagebar();
-			$('body').messagebar("show");
-			setTimeout(function() {
+			
+			$('#show').click(function() {
+				$('body').messagebar("show");
+			});
+			
+			$('#hide').click(function() {
 				$('body').messagebar("hide");
-			}, 3000);
+			});
 		});
 	</script>
 <body>
@@ -24,6 +28,8 @@
 		<p>Some wonderful content goes here</p>
 		<p>Some wonderful content goes here</p>
 		<p>Some wonderful content goes here</p>
+		<p><a id="show" href="#">Show</a> the message bar</p>
+		<p><a id="hide" href="#">Hide</a> the message bar</p>
 	</div>
 
 </body>
