@@ -1,0 +1,29 @@
+.messagebar{
+    height:50px;
+    width:100%;
+    background-color: #fff;
+    position:fixed;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95); 
+    opacity: 0.95;
+    -moz-opacity: 0.95;
+    left:0px;
+    z-index:9999999;
+    margin:0px;
+    padding:0px;
+}
+.messagebar-top{
+    top:0px;
+    border-top:2px solid #fff;
+    border-bottom: 1px solid #ebebeb;
+}
+.messagebar-bottom{
+    bottom:0px;
+    border-bottom:2px solid #fff;
+    border-top: 1px solid #ebebeb;
+    color:#777;
+}
+.messagebar-content{
+    line-height:46px;
+    font-size: 18px;
+    font-family:'Lucida Grande',sans-serif;
+}
