@@ -19,13 +19,13 @@
 			
 			$('#submit-info').click(function(event) {
 				event.preventDefault();
-				$('body').messagebar('addMessage', $('#message').val(), 'info');
+				$('body').messagebar('addMessage', $('#info-message').val(), 'info');
 				$('#info-message').val('');
 			});
 			
 			$('#submit-error').click(function(event) {
 				event.preventDefault();
-				$('body').messagebar('addMessage', $('#message').val(), 'error');
+				$('body').messagebar('addMessage', $('#error-message').val(), 'error');
 				$('#error-message').val('');
 			});
 		});
@@ -53,4 +53,4 @@
 
 </body>
 
-</html> 
+</html>
