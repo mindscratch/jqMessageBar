@@ -25,27 +25,39 @@ $('body').messagebar();
 
 * show: show the messagebar
 
+```javascript
     $('body').messagebar('show');
+```
 
 * hide: hide the messagebar
 
+```javascript
     $('body').messagebar('hide');
+```
 
 * isShowing: returns true/false indicating whether the messagebar is being shown or not
 
+```javascript
     $('body').messagebar('isShowing');
+```
 
-* addMessage(message, type): add a new message and associate with a type (see the "message_types" option in the `init` method). Messages are always added to the front of the list.
+* addMessage(message, type): add a new message and associate with a type (see the "message_types" option in the `init` method). Messages are always added to the front of the list. If the message bar is already showing and you add a message it will not be immediately displayed. Instead you must invoke the `show` method after adding the message.
 
+```javascript
     $('body').messagebar('addMessage', 'hello world', 'info');
+```
 
 * showNext: show the next message, this assumes the message bar is already showing
 
+```javascript
     $('body').messagebar('showNext');
+```
 
 * showPrevious: show the previous message, this assumes the message bar is already showing
 
+```javascript
     $('body').messagebar('showPrevious');
+```
 
 Dependencies
 ============
