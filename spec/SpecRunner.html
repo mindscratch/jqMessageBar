@@ -2,22 +2,25 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-  <title>Jasmine-jQuery Test Runner</title>
-  <link rel="stylesheet" type="text/css" href="external/jasmine-1.1.0/jasmine.css">
-
-  <script type="text/javascript" src="external/jasmine-1.1.0/jasmine.js"></script>
-  <script type="text/javascript" src="external/jasmine-1.1.0/jasmine-html.js"></script>
-
-  <script type="text/javascript" src="external/jquery-1.6.1.min.js"></script>
-
-  <script type="text/javascript" src="external/jasmine-jquery/jasmine-jquery.js"></script>
+  <title>jqMessageBar Test Runner</title>
+  <link rel="stylesheet" type="text/css" href="../external/jasmine-1.1.0/jasmine.css">
   
-  <!-- add specs -->
-  <script type="text/javascript" src="spec/suites/foobar-spec.js"></script>
+  <!-- Add jasmine and jasmine-jquery stuff -->
+  <script type="text/javascript" src="../external/jasmine-1.1.0/jasmine.js"></script>
+  <script type="text/javascript" src="../external/jasmine-1.1.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="../external/jquery-1.6.1.min.js"></script>
+  <script type="text/javascript" src="../external/jasmine-jquery/jasmine-jquery.js"></script>
+  
+  <!-- Add source files -->
+  <script type="text/javascript" src="../lib/jquery.messagebar.js"></script>
+  
+  <!-- Add specs -->
+  <script type="text/javascript" src="suites/jquery.messagebar-spec.js"></script>
 </head>
 <body>
 
 <script type="text/javascript">
+  jasmine.getFixtures().fixturesPath = "fixtures";
   jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
   jasmine.getEnv().execute();
 </script>
