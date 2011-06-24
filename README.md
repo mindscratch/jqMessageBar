@@ -67,6 +67,12 @@ Dependencies
 
 * jQuery 1.6 (most likely works with older versions as well, presumably 1.4+)
 
+Running Tests
+=============
+
+* To run the tests from the file system using your web browser, just open up the spec/SpecRunner.html
+* If you are using Chrome the tests won't work, you need to pass a command-line arg to Chrome when you start it. [reference](http://stackoverflow.com/questions/4208530/xmlhttprequest-origin-null-is-not-allowed-access-control-access-allow-for-file)
+
 Demo
 ====
 
