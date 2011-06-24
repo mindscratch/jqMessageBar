@@ -19,7 +19,9 @@ Plugin API
 
 * init: create the plugin, see the source for details about what options `init` accepts
 
-    $('body').messagebar();
+```javascript
+$('body').messagebar();
+```
 
 * show: show the messagebar
 
