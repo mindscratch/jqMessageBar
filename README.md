@@ -72,6 +72,11 @@ Demo
 
 To try it clone or download the project and open up index.html
 
+Roadmap
+=======
+
+* see the issues I've added future enhancements there
+
 License
 =======
 
