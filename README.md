@@ -17,7 +17,7 @@ Plugin API
 ==========
 
 
-* init: create the plugin, see the source for details about what options `init` accepts
+* init: create the plugin, see the source for details about what options `init` accepts (p.s. I know that's lame, I want to provide "real" documentation in the near future...of course you could fork, do it and submit a pull request :)
 
 ```javascript
 $('body').messagebar();
