@@ -45,6 +45,9 @@ $('body').messagebar();
 
 ```javascript
     $('body').messagebar('addMessage', 'hello world', 'info');
+
+    // add and show a message
+        $('body').messagebar('addMessage', 'hello world', 'info').messagebar('show');
 ```
 
 * showNext: show the next message, this assumes the message bar is already showing
