@@ -1,13 +1,53 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" media="screen"/> 
+	<style type="text/css">
+		/* custom styles applied to the messagebar */
+		.my-super-content {
+			line-height:46px;
+			font-size: 22px;
+			font-family:'Lucida Grande',sans-serif;
+			color: #000;
+		}
+
+		.my-bar-info {
+			/* have to use important b/c of the opacity used in the messagebar class, it takes precedence unless we use important */
+			background-color: #333 !important; 
+		}
+
+		.my-bar-error {
+			background-color: #fabb09 !important;
+		}
+
+		.my-content-info {
+			font-weight: normal;
+			color: #fff;
+		}
+
+		.my-content-error {
+			font-weight: bold;
+			color: #000;
+		}
+	</style>
     <script src="external/jquery-1.6.1.min.js" type="text/javascript"></script> 
-    <script src="lib/jquery.messagebar.js" type="text/javascript"></script> 
-    <script type="text/javascript">
+    <script src="lib/jqmessagebar.js" type="text/javascript"></script> 
+	<script type="text/javascript">
 		$(function() {
+                        // create messagebar, customize position and styles
+                        /*
 			$('body').messagebar({
-				random: 1234
+				background_color: '#ffff00',
+				position: 'bottom',
+				content_id: 'mycontent',
+				content_class: 'my-super-content',
+				message_types: {
+					info: {barClass: 'my-bar-info', contentClass: 'my-content-info'},
+					error: {barClass: 'my-bar-error', contentClass: 'my-content-error'},
+				}
 			});
+                        */
+                        // create default messagebar
+                        $('body').messagebar();
 			
 			$('#show').click(function() {
 				$('body').messagebar("show");
