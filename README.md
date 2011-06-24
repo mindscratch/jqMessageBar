@@ -15,3 +15,8 @@ Demo
 ====
 
 To try it clone or download the project and open up index.html
+
+License
+=======
+
+[MIT](http://en.wikipedia.org/wiki/MIT_License)
