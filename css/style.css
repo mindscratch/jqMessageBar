@@ -75,7 +75,7 @@
 
 /* styles for navigation */
 .messagebar-navigation {
-	padding: 0;
+	padding: 0 5px 0 0;
 	margin: 0;
 	border: none;
 	float: left;
