@@ -78,12 +78,19 @@ Running Tests
 Demo
 ====
 
-To try it clone or download the project and open up index.html
+* http://codecraig.com/demos/jqMessageBar
+* clone or download the project and open up index.html
 
 Roadmap
 =======
 
 * see the issues I've added future enhancements there
+
+Mentions
+========
+
+* http://javascriptshow.com/episodes/7
+* http://webscripts.softpedia.com/script/Forms-and-Controls-C-C/jqMessageBar-69925.html
 
 License
 =======
