@@ -11,7 +11,6 @@
     padding:0px;
 	border: none;
 	display: none;
-	cursor: pointer;
 }
 
 /* position the message bar on the screen */
@@ -109,4 +108,13 @@
 
 .messagebar-content-error {
 	font-weight: bold;
+}
+
+.messagebar-close-button {
+  position: relative;
+  float: right;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
 }
